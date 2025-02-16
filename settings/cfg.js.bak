@@ -1,0 +1,15 @@
+global.owner = [
+  "2250500664998", //ganti nomor owner
+  "2250500664998" //nomor owner kedua kalo ada
+]
+global.nomorbot = '2250500664998'
+global.urlfoto = 'https://files.catbox.moe/bxq742.mp4'
+
+let fs = require('fs')
+let file = require.resolve(__filename)
+fs.watchFile(file, () => {
+fs.unwatchFile(file)
+console.log(`Update ${__filename}`)
+delete require.cache[file]
+require(file)
+})
