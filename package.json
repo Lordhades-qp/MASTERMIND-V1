@@ -2,9 +2,9 @@
   "name": "MASTERMIND V1",
   "version": "6.0.0",
   "description": ".",
-  "main": "master.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node master.js"
+    "start": "node server.js"
   },
   "author": "MASTERMIND",
   "license": "MIT",
